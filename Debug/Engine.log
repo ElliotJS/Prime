@@ -1,0 +1,22 @@
+﻿  Engine.cpp
+C:\Users\smith\OneDrive\Desktop\Engine\Engine.cpp(8,47): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\smith\OneDrive\Desktop\Engine\Engine.cpp(9,47): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\smith\OneDrive\Desktop\Engine\Engine.cpp(11,55): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\smith\OneDrive\Desktop\Engine\Engine.cpp(11,41): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+sfml-window-d.lib(sfml-window-d-2.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'
