@@ -1,30 +1,33 @@
 #include "Scene.h"
 
+#include "objects/PlayerObject.h"
+
 namespace Prime {
 	Scene::Scene()
 	{
+		_worldObjects.push_back(WorldObjectRef(new PlayerObject()));
 	}
 
 	void Scene::Update(float dt)
 	{
-		for (WorldObject& wO : _worldObjects) {
-			wO.Update(dt);
+		for (WorldObjectRef& wO : _worldObjects) {
+			wO.get()->Update(dt);
 		}
 		DeleteAll();
 	}
 
 	void Scene::Draw()
 	{
-		for (WorldObject& wO : _worldObjects) {
-			wO.Draw();
+		for (WorldObjectRef& wO : _worldObjects) {
+			wO.get()->Draw();
 		}
 	}
 
 	void Scene::DeleteObject(int id)
 	{
-		int cnt;
-		for (WorldObject& wO : _worldObjects) {
-			if (wO.id == id) {
+		int cnt = 0;
+		for (WorldObjectRef& wO : _worldObjects) {
+			if (wO.get()->id == id) {
 				_worldObjects.erase(_worldObjects.begin() + cnt);
 				return;
 			}
@@ -45,8 +48,12 @@ namespace Prime {
 		_objectsToBeDeleted.push_back(id);
 	}
 
-	WorldObject Scene::GetObject(int id)
+	WorldObjectRef Scene::GetObject(int id)
 	{
-		return WorldObject();
+		for (WorldObjectRef& wO : _worldObjects) {
+			if (wO.get()->id == id) {				
+				return WorldObjectRef(wO.get());
+			}
+		}
 	}
 }

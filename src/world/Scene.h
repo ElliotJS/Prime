@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../utility/states/PlayState.h"
+#include <vector>
 #include "WorldObject.h"
 
 namespace Prime {
@@ -13,12 +13,12 @@ namespace Prime {
 		void Draw();
 
 		void RemoveID(int id);
-		WorldObject GetObject(int id);
+		WorldObjectRef GetObject(int id);
 
 	private:
 
 		std::vector<int> _objectsToBeDeleted;
-		std::vector<WorldObject	> _worldObjects;
+		std::vector<WorldObjectRef> _worldObjects;
 
 		void DeleteObject(int id);
 		void DeleteAll();

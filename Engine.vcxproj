@@ -171,6 +171,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\world\objects\PlayerObject.cpp" />
     <ClCompile Include="src\world\Scene.cpp" />
     <ClCompile Include="src\math\physics\AABB.cpp" />
     <ClCompile Include="src\math\physics\Physics.cpp" />
@@ -197,6 +198,7 @@
     <ClCompile Include="src\world\WorldObject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\world\objects\PlayerObject.h" />
     <ClInclude Include="src\world\Scene.h" />
     <ClInclude Include="src\math\physics\AABB.h" />
     <ClInclude Include="src\math\physics\Physics.h" />

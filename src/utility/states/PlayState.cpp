@@ -24,21 +24,12 @@ namespace Prime {
 	}
 
 	void PlayState::Update(float dt) {
-		_objectsToBeDeleted.clear();
-
-		for (auto& removeID : _objectsToBeDeleted) {
-			RemoveID(removeID);
-		}
+		_scene.Update(dt);
 	}
 
 	void PlayState::Draw() {
 		Display::Camera::DrawSprite(_background);
-	}
 
-	void PlayState::RemoveObject(int id)
-	{
-	}
-
-	void PlayState::RemoveID(int id) {
+		_scene.Draw();
 	}
 }

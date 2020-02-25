@@ -1,20 +1,8 @@
-﻿  Scene.cpp
-C:\Users\smith\OneDrive\Desktop\Engine\src\utility\states\PlayState.h(28,15): error C3646: '_scene': unknown override specifier
-C:\Users\smith\OneDrive\Desktop\Engine\src\utility\states\PlayState.h(28,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+﻿  PlayerObject.cpp
+  Scene.cpp
   MainMenuState.cpp
-C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.h(9,25): error C2061: syntax error: identifier 'PlayState'
-C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.h(11,18): error C3646: 'state': unknown override specifier
-C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.h(11,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   PlayState.cpp
-C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.h(9,25): error C2061: syntax error: identifier 'PlayState'
-C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.h(11,18): error C3646: 'state': unknown override specifier
-C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.h(11,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\smith\OneDrive\Desktop\Engine\src\utility\states\PlayState.cpp(9,33): error C2664: 'Prime::Scene::Scene(Prime::Scene &&)': cannot convert argument 1 from 'Prime::PlayState' to 'const Prime::Scene &'
-C:\Users\smith\OneDrive\Desktop\Engine\src\utility\states\PlayState.cpp(10,2): message : Reason: cannot convert from 'Prime::PlayState' to 'const Prime::Scene'
-C:\Users\smith\OneDrive\Desktop\Engine\src\utility\states\PlayState.cpp(9,34): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.h(15,2): message : see declaration of 'Prime::Scene::Scene'
-C:\Users\smith\OneDrive\Desktop\Engine\src\utility\states\PlayState.cpp(12,70): error C2664: 'Prime::Scene::Scene(Prime::Scene &&)': cannot convert argument 1 from 'Prime::PlayState' to 'const Prime::Scene &'
-C:\Users\smith\OneDrive\Desktop\Engine\src\utility\states\PlayState.cpp(12,70): message : Reason: cannot convert from 'Prime::PlayState' to 'const Prime::Scene'
-C:\Users\smith\OneDrive\Desktop\Engine\src\utility\states\PlayState.cpp(12,63): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.h(15,2): message : see declaration of 'Prime::Scene::Scene'
+  WorldObject.cpp
   Generating Code...
+C:\Users\smith\OneDrive\Desktop\Engine\src\world\Scene.cpp(58): warning C4715: 'Prime::Scene::GetObject': not all control paths return a value
+  Engine.vcxproj -> C:\Users\smith\OneDrive\Desktop\Engine\x64\Debug\Engine.exe
